@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/css/all.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <div class="top">
+        <label onclick="logout()">注 销</label>
+    </div>
+
+    <!-- 群聊 -->
+    <div class="box-group">
+        <div class="box-group-left">
+            <div class="box-group-left-top">
+                群聊
+            </div>
+            <div class="box-group-left-middle">
+
+            </div>
+            <div class="box-group-left-bottom">
+                <textarea  id="pubMessage"></textarea>
+                <input type="button" value="发 送" onclick="sendPubMess()" />
+            </div>
+        </div>
+        <!-- box-group-right -->
+        <div class="box-group-right">
+            <div class="box-group-right-top">
+                <p><img src="../static/images/default.jpg" alt=""></p>
+                <p><label></label></p>
+            </div>
+            <div class="box-group-right-bottom">
+                <marquee direction="up" scrollamount="5" scrolldelay="100" onmouseover="this.stop()" onmouseout="this.start()">
+                </marquee>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 私聊 -->
+    <div class="box-private">
+        <div class="box-private-top">
+            <div></div>
+            <div onclick="backGroup()">返回群聊</div>
+        </div>
+        <div class="box-private-middle">
+
+        </div>
+        <div class="box-private-bottom">
+            <textarea id="priMessage"></textarea>
+            <input type="button" value="发 送" onclick="sendPriMess()" />
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="static/js/all.js"></script>
+<script type="text/javascript" src="static/js/index.js"></script>
+</html>

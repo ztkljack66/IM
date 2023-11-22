@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 顶部导航 */
+.top{
+    text-align: right;
+    height: 30px;
+    background-color: orange;
+    padding: 0 5px;
+}
+
+.top>label{
+    width: 60px;
+    height: 30px;
+    font-size: 18px;
+    background-color:aquamarine;
+    padding:6px 3px 7px 3px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* 群聊 */
+.box-group{
+    font-weight: 700;
+    border: 1px solid grey;
+    width: 630px;
+    height: 510px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -250px 0 0 -310px;
+}
+.box-group-left{
+    overflow: hidden;
+    display: inline-block;
+    width:502px;
+    height: 508px;
+    border: 1px solid gray;
+}
+
+.box-group-left-top{
+    width:498px;
+    height: 30px;
+    text-align: center;
+    background-color: darkcyan;
+}
+
+.box-group-left-middle{
+    border-bottom:1px solid gray;
+    padding-top: 3px;
+    width:498px;
+    height: 420px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+}
+.box-group-left-bottom{
+    width:498px;
+    height: 50px;
+    margin-top: 3px;
+}
+.box-group-left-bottom textarea{
+    width:420px;
+    height: 50px;
+}
+.box-group-left-bottom input[type=button]{
+    display: inline-block;
+    margin-left: 2px;
+    width: 75px;
+    height: 50px;
+    position: absolute;
+}
+.box-group-right{
+    border-left: 1px solid gray;
+    overflow: hidden;
+    display:inline-block;
+    width: 120px;
+    height: 100%;
+}
+
+.box-group-right-top{
+    height: 100px;
+    margin-bottom: 3px;
+}
+.box-group-right-top img{
+    width:70px;
+    height:70px;
+}
+.box-group-right-bottom{
+    border-top:1px solid gray;
+    height:400px;
+}
+.box-group-right-bottom marquee{
+    height: 100%;
+}
+
+
+
+
+
+/* 私聊 */
+.box-private{
+    font-weight: 700;
+    border: 1px solid grey;
+    width: 500px;
+    height: 510px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -250px 0 0 -250px;
+}
+.box-private-top{
+    background-color: darkcyan;
+    width:498px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.box-private-top>div:nth-child(1){
+    display: inline-block;
+    width: 450px;
+    height: 30px;
+    overflow: hidden;
+}
+.box-private-top>div:nth-child(2){
+    background-color:orange;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    overflow:hidden;
+    font-size: 12px;
+    cursor: pointer;
+}
+.box-private-middle{
+    border-top:1px solid gray;
+    border-bottom: 1px solid gray;
+    width:498px;
+    height: 428px;
+    padding: 3px 0;
+    overflow-y:auto;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+
+}
+.box-private-bottom{
+    width: 598px;
+    height: 40px;
+}
+.box-private-bottom textarea{
+    display: inline-block;
+    width: 420px;
+    height: 50px;
+    font-size: 14px;
+}
+.box-private-bottom input[type=button]{
+    display: inline-block;
+    margin-left: 2px;
+    width: 75px;
+    height: 50px;
+    position: absolute;
+} 
+.box-private-bottom>div{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+

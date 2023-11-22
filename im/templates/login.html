@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>登录</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/css/all.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+
+<body>
+    <!-- 信息展示 -->
+    <div class="message">
+        <label></label>
+    </div>
+    <!-- 登录 -->
+    <div class="login-box">
+        <h3>欢迎登录</h3>
+        <div class="login-input-box">
+            <div>
+                <span>用户名：</span>
+                <input type="text" name="loginUserName" placeholder="用户名">
+            </div>
+            <div>
+                <span style="margin-left: 13px;">密码：</span>
+                <input type="password" name="loginUserPass" placeholder="密码">
+            </div>
+            <div class="loginButton">
+                <input type="button" value="登 录" onclick="login()">
+            </div>
+            <div class="register">
+                还没有帐号? <a href="#">注册</a>
+                <span><a href="#">忘记密码？</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注册 -->
+    <div class="register-box">
+        <h3>欢迎注册</h3>
+        <div class="register-input-box">
+            <div>
+                <span>用户名：</span>
+                <input type="text" name="registerUserName" placeholder="用户名">
+            </div>
+            <div>
+                <span style="margin-left: 13px;">密码：</span>
+                <input type="password" name="registerUserPass" placeholder="密码">
+            </div>
+            <div class="textCode">
+                <span>验证码：</span>
+                <input type="text" name="code" placeholder="验证码">
+                <img>
+            </div>
+            <div class="aqCode">
+                <span  style="margin-left: 13px;">密保：</span>
+                <input type="text" name="petName" placeholder="随便输入一段话">
+            </div>
+            <div class="registerButton">
+                <input type="button" onclick="register()" value="注 册">
+            </div>
+        </div>
+    </div>
+
+    <!-- 重置密码 -->
+    <div class="reset-box">
+        <h3>重置密码</h3>
+        <div class="reset-input-box">
+            <div>
+                <span>用户名：</span>
+                <input type="text" name="resetname" placeholder="输入用户名">
+            </div>
+            <div>
+                <span>新密码：</span>
+                <input type="password" name="resetpass" placeholder="输入新密码">
+            </div>
+            <div>
+                <span style="margin-left: 13px;">密保：</span>
+                <input type="text" name="resetpetname" placeholder="注册时填写的密保">
+            </div>
+            <div class="resetButton">
+                <input type="button" onclick="resetpass()" value="重置密码">
+            </div>
+        </div>
+
+    </div>
+    <!-- 版权 -->
+    <div class="copyright">
+        © 在线聊天系统 V1.0
+    </div>
+</body>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="static/js/all.js"></script>
+<script type="text/javascript" src="static/js/login.js"></script>
+
+</html>
